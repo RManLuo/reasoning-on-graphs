@@ -1,0 +1,12 @@
+.vscode/
+datasets/
+logs/
+ref_examples/
+results/
+test/
+wandb/
+save_models/
+.env
+*.pyc
+tmp/
+RoG_train.tar.gz
