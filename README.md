@@ -21,7 +21,7 @@ You can find the pre-trained weights [here](https://huggingface.co/rmanluo/RoG).
 ### Step1: Planning (Generate relation paths)
 Run: `./scripts/planning.sh`
 ```bash
-python src/align_kg/gen_rule_path.py \
+python src/qa_prediction/gen_rule_path.py \
 --model_name RoG \
 --model_path rmanluo/RoG \
 -d {RoG-webqsp,RoG-cwq} \
