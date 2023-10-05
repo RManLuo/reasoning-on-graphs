@@ -2,7 +2,7 @@
 
 Official Implementation of "[Reasoning on Graphs: Faithful and Interpretable Large Language Model Reasoning](https://arxiv.org/abs/2310.01061)".
 
-<img src="resources/rog.png" width = "600" />
+<img src="resources/rog.png" width = "800" />
 
 Reasoning on graphs (RoG) synergizes LLMs with KGs to enable faithful and interpretable reasoning. We present a planning-retrieval-reasoning framework, where RoG first generates relation paths grounded by KGs as faithful plans. These plans are then used to retrieve valid reasoning paths from the KGs for LLMs to conduct faithful reasoning and generate interpretable results.
 
@@ -76,5 +76,6 @@ Training code will be available soon.
 ## Results
 
 <img src="resources/results.png" width = "600" />
+<img src="resources/plug-and-play.png" width = "600" />
 <img src="resources/lack_of_knowledge.png" width = "600" />
 <img src="resources/hallucination.png" width = "600" />
