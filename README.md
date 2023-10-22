@@ -104,3 +104,14 @@ Training code will be available soon.
 <img src="resources/plug-and-play.png" width = "600" />
 <img src="resources/lack_of_knowledge.png" width = "600" />
 <img src="resources/hallucination.png" width = "600" />
+
+## Bibinfo
+If you found this repo helpful, please help us by citing this paper:
+```
+@article{luo_rog,
+title={Reasoning on Graphs: Faithful and Interpretable Large Language Model Reasoning},
+author={Luo, Linhao and Li, Yuan-Fang and Haffari, Gholamreza and Pan, Shirui},
+journal={arXiv preprint arxiv:2310.01061},
+year={2023}
+}
+```
