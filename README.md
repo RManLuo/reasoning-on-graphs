@@ -1,5 +1,4 @@
 # Reasoning on Graphs (RoG)
-
 Official Implementation of "[Reasoning on Graphs: Faithful and Interpretable Large Language Model Reasoning](https://arxiv.org/abs/2310.01061)".
 
 <img src="resources/rog.png" width = "800" />
@@ -7,7 +6,6 @@ Official Implementation of "[Reasoning on Graphs: Faithful and Interpretable Lar
 Reasoning on graphs (RoG) synergizes LLMs with KGs to enable faithful and interpretable reasoning. We present a planning-retrieval-reasoning framework, where RoG first generates relation paths grounded by KGs as faithful plans. These plans are then used to retrieve valid reasoning paths from the KGs for LLMs to conduct faithful reasoning and generate interpretable results.
 
 ## Requirements
-
 ```
 pip install -r requirements.txt
 ```
@@ -18,7 +16,7 @@ You can find the pre-trained weights [here](https://huggingface.co/rmanluo/RoG).
 
 ## Datasets
 
-[RoG-WebQSP](https://huggingface.co/datasets/rmanluo/RoG-webqsp)
+[RoG-WebQSP](https://huggingface.co/datasets/rmanluo/RoG-webqsp)   
 [RoG-CWQ](https://huggingface.co/datasets/rmanluo/RoG-cwq)
 
 ## Inference
@@ -96,7 +94,33 @@ print(outputs[0]['generated_text'])
 
 ## Training
 
-Training code will be available soon.
+### Training Datasets
+You can download the processed datasets from [RoG_train_data.tar.tz](datasets/RoG_train_data.tar.tz). Unzip the files and put them under `datasets/` folder.
+<details> <summary>Process datasets</summary>
+
+1. Build question to relation path pairs.
+
+```bash
+python src/align_kg/build_align_qa_dataset.py -d {RoG-webqsp,RoG-cwq} --split {train,validation,test}
+```
+2. Build joint-training datasets.
+
+```bash
+python src/joint_training/preprocess_align.py
+python src/joint_training/preprocess_qa.py
+```
+
+3. Build interpretable examples.
+```bash
+python src/joint_training/generate_explanation_results.py
+```
+
+</details>
+
+### Training RoG
+2 A100-80GB GPUs are required for training RoG.
+
+Run: `./scripts/train.sh`
 
 ## Results
 

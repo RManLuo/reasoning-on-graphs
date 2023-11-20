@@ -1,5 +1,6 @@
 .vscode/
-datasets/
+datasets/joint_training
+datasets/AlignData
 logs/
 ref_examples/
 results/
