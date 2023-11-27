@@ -18,9 +18,13 @@ You can find the pre-trained weights [here](https://huggingface.co/rmanluo/RoG).
 
 [RoG-WebQSP](https://huggingface.co/datasets/rmanluo/RoG-webqsp)   
 [RoG-CWQ](https://huggingface.co/datasets/rmanluo/RoG-cwq)
+<details> <summary>Subgraph Extraction</summary>
+
+We extract the subgraphs from the Freebase following previous studies. The code can be found [here](https://github.com/RichardHGL/WSDM2021_NSM/tree/main/preprocessing/Freebase).   
+</details>
 
 ## Inference
-
+Requirements: Any GPU with at least 12GB memory.
 ### Step1: Planning (Generate relation paths)
 
 Run: `./scripts/planning.sh`
