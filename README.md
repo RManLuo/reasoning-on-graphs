@@ -136,10 +136,10 @@ Run: `./scripts/train.sh`
 ## Bibinfo
 If you found this repo helpful, please help us by citing this paper:
 ```
-@article{luo_rog,
+@inproceedings{luo2024rog,
 title={Reasoning on Graphs: Faithful and Interpretable Large Language Model Reasoning},
 author={Luo, Linhao and Li, Yuan-Fang and Haffari, Gholamreza and Pan, Shirui},
-journal={arXiv preprint arxiv:2310.01061},
-year={2023}
+booktitle={International Conference on Learning Representations},
+  year={2024}
 }
 ```
