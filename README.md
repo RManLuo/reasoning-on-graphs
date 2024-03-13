@@ -12,9 +12,13 @@ pip install -r requirements.txt
 
 ## Pre-trained weights
 
+> Our code will automatically download the model weight from the huggingface.
+
 You can find the pre-trained weights [here](https://huggingface.co/rmanluo/RoG).
 
 ## Datasets
+
+> Our code will automatically download the data from the huggingface.
 
 [RoG-WebQSP](https://huggingface.co/datasets/rmanluo/RoG-webqsp)   
 [RoG-CWQ](https://huggingface.co/datasets/rmanluo/RoG-cwq)
