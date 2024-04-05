@@ -26,4 +26,4 @@ accelerate launch --config_file config/deepspeed_zero3.yml src/joint_training/jo
     --tf32 True \
     --report_to "wandb" \
     --gradient_checkpointing True \
-    --run_name ${SAVE_NAME}"
+    --run_name ${SAVE_NAME}
