@@ -8,3 +8,6 @@ pybind11==2.11.1
 networkx==3.1
 graph-walker==1.0.6
 tqdm
+sentencepiece==0.1.99
+wandb==0.15.8
+deepspeed==0.10.1
