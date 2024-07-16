@@ -15,8 +15,8 @@ N_CPUS = int(os.environ['SLURM_CPUS_PER_TASK']) if 'SLURM_CPUS_PER_TASK' in os.e
 save_dir = "datasets/joint_training/ExplainQAData"
 split="train"
 model_max_length = 1024
-data_list = ['webqsp', 'cwq']
-data_path = "/home/lluo/projects/KIT/data/KGQA"
+data_list = ['RoG-webqsp', 'RoG-cwq']
+data_path = "rmanluo"
 
 Config = namedtuple("Config", "retry model_name")
 config = Config(retry=3, model_name = "gpt-3.5-turbo")
