@@ -5,6 +5,9 @@ Official Implementation of "[Reasoning on Graphs: Faithful and Interpretable Lar
 
 Reasoning on graphs (RoG) synergizes LLMs with KGs to enable faithful and interpretable reasoning. We present a planning-retrieval-reasoning framework, where RoG first generates relation paths grounded by KGs as faithful plans. These plans are then used to retrieve valid reasoning paths from the KGs for LLMs to conduct faithful reasoning and generate interpretable results.
 
+## News 🎉
+Check out our latest work on KG + LLM reasoning: [Graph-constrained Reasoning](https://github.com/RManLuo/graph-constrained-reasoning) 
+
 ## Requirements
 ```
 pip install -r requirements.txt
