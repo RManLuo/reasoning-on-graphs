@@ -7,7 +7,7 @@ set -- $PROMPT_LIST
 
 for DATA_NAME in $DATASET_LIST; do
     for N_BEAM in $BEAM_LIST; do
-        RULE_PATH=results/gen_rule_path/${DATA_NAME}/${MODEL_NAME}/test/predictions_${N_BEAM}_False.jsonl
+        RULE_PATH=results/gen_rule_path/${DATA_NAME}/RoG/test/predictions_${N_BEAM}_False.jsonl
         for i in "${!MODEL_LIST[@]}"; do
         
             MODEL_NAME=${MODEL_LIST[$i]}
